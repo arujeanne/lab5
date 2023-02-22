@@ -1,7 +1,7 @@
 let column_1 = [3,8,4,6,6,6,5,5,9,3,1,5,9,3,5,3,5,3,5,1,6,3,5,7,3,7,4,9,1,8]
 let sum_1 = sum(column_1)
 
-let column_2 = [9,5,2,4,6,8,4,6,3,7,7,8,6,6,8,7,9,2,7,9,8,9,2,7,8,2,1,5,8]
+let column_2 = [9,5,2,4,6,8,4,6,3,7,7,8,6,6,8,7,9,2,7,9,8,9,2,7,8,2,1,5,8,9]
 let sum_2 = sum(column_2)
 
 let column_3 = [69,76,51,62,40,75,77,43,87,85,57,88,74,56,58,74,64,93,48,65,44,63,65,45,58,86,75,82,69,48]
@@ -19,7 +19,7 @@ function sum  (column){
 }
 
 let sums = [sum_1, sum_2, sum_3, sum_4]
-
+let total_sum = sum_1 + sum_2 + sum_3 + sum_4
 
 const results = {
     col1: column_1,
@@ -27,7 +27,7 @@ const results = {
     col3: column_3,
     col4: column_4,
     sums1: sums,
-    total_score:  sum_1 + sum_2 + sum_3 + sum_4
+    total_score: total_sum,
 }
 
 console.log(results);
